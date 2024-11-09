@@ -9,7 +9,7 @@
 <%
     String username = request.getParameter("username");
     String email = request.getParameter("email");
-    String password = request.getParameter("password");
+    String password = request.getParameter("pw");
     String job = request.getParameter("job");
     String status = request.getParameter("status");
 %>

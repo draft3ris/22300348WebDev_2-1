@@ -10,20 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1efedd2-589c-40c5-b20b-a23a815516b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/form_add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/form_edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/handleSubmit_add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/handleSubmit_edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/inc/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/inc/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/my_2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add_ok.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit_ok.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +72,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Desktop/school resources/web service development/project2-1_JSPCRUDnoDB/src/main/webapp",
+    "last_opened_file_path": "C:/Users/User/Desktop/school resources/web service development/project2-1_JSPCRUDnoDB/war",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -97,8 +84,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\school resources\web service development\project2-1_JSPCRUDnoDB\src\main\webapp" />
       <recent name="C:\Users\User\Desktop\school resources\web service development\project2-1_JSPCRUDnoDB\war" />
+      <recent name="C:\Users\User\Desktop\school resources\web service development\project2-1_JSPCRUDnoDB\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\school resources\web service development\project2-1_JSPCRUDnoDB\src\main\webapp" />
