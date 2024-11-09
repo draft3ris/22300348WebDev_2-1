@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ include file="./inc/header.jsp"%>
 <!DOCTYPE html>
 
 <html lang="en" data-bs-theme="dark">
@@ -28,123 +29,116 @@
     <title>Project 2-1</title>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-    <symbol id="bootstrap" viewBox="0 0 118 94">
-        <title>Bootstrap</title>
-        <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
-        </path>
-    </symbol>
-    <symbol id="table" viewBox="0 0 16 16">
-        <path
-                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
-    </symbol>
-</svg>
-
-<!--page header-->
-<div class="container">
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/"
-               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <svg class="bi me-2" fill="white" width="40" height="32">
-                    <use xlink:href="#table" />
-                </svg>
-                <span class="fs-4">Contact List</span>
-            </a>
-        </header>
-    </div>
-
     <!--table-->
     <div class="container-fluid" id="table-container">
         <div class="table-responsive small">
             <table class="table table-striped table-sm table-hover" style="margin:auto;">
                 <thead>
                 <tr>
+                    <th scope="col">#</th>
                     <th scope="col">Name</th>
+                    <th scope="col">Title</th>
                     <th scope="col">Phone no.</th>
-                    <th scope="col">Fax no.</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Occupation</th>
-                    <th scope="col"></th>
+                    <th scope="col">Post Type</th>
+                    <th scope="col">User Type</th>
+                    <th scope="col">Actions</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
+                    <td class="align-middle">1</td>
                     <td class="align-middle">Jane</td>
+                    <td class="align-middle">
+                        <a class="link-info link-offset-2 link-opacity-75-hover link-opacity-underline-50-hover" href='view.jsp'>placeholdertext placeholdertext placeholdertext placeholdertext
+                        </a>
+                    </td>
                     <td class="align-middle">010-7234-8591</td>
-                    <td class="align-middle">0504-173-9234</td>
-                    <td class="align-middle">janedoe@gmail.com</td>
-                    <td class="align-middle">Police</td>
+                    <td class="align-middle">Discussion</td>
+                    <td class="align-middle">Moderator</td>
                     <td class="align-middle">
                         <div class="btn-group">
-                            <a href='/edit'><button class="btn btn-primary d-inline-flex align-items-center" type="button">
+                            <a href='edit.jsp'><button class="btn btn-outline-primary d-inline-flex align-items-center" type="button">
                                 <i class="bi bi-pencil-fill"></i>&nbsp <div id="actionbuttontext">Edit</div>
                             </button></a>
-                            <button type="button" class="btn btn-danger d-inline-flex align-items-center" onclick="confirmDelete(1);">
+                            <button type="button" class="btn btn-outline-danger d-inline-flex align-items-center" onclick="confirmDelete(1);">
                                 <i class="bi bi-trash-fill"></i>&nbsp <div id="actionbuttontext">Delete</div>
                             </button>
-                            <a href='/view'><button type="button" class="btn btn-secondary d-inline-flex align-items-center">
+                            <a href='view.jsp'><button type="button" class="btn btn-outline-info d-inline-flex align-items-center">
                                 <i class="fa-solid fa-magnifying-glass-plus"></i>&nbsp <div id="actionbuttontext">Details</div>
                             </button></a>
                         </div>
                     </td>
                 </tr>
                 <tr>
+                    <td class="align-middle">2</td>
                     <td class="align-middle">Wise</td>
-                    <td class="align-middle">010-6193-4823</td>
-                    <td class="align-middle">0508-283-5981</td>
-                    <td class="align-middle">imverygeneric@gmail.com</td>
-                    <td class="align-middle">Store owner</td>
+                    <td class="align-middle">
+                        <a class="link-info link-offset-2 link-opacity-75-hover link-opacity-underline-50-hover" href='view.jsp'>
+                            placeholdertext placeholdertext placeholdertext placeholdertext
+                        </a>
+                    </td>
+                    <td class="align-middle">010-7234-8591</td>
+                    <td class="align-middle">Announcement</td>
+                    <td class="align-middle">Admin</td>
                     <td class="align-middle">
                         <div class="btn-group">
-                            <a href='/edit'><button class="btn btn-primary d-inline-flex align-items-center" type="button">
+                            <a href='edit.jsp'><button class="btn btn-outline-primary d-inline-flex align-items-center" type="button">
                                 <i class="bi bi-pencil-fill"></i>&nbsp <div id="actionbuttontext">Edit</div>
                             </button></a>
-                            <button type="button" class="btn btn-danger d-inline-flex align-items-center" onclick="confirmDelete(2);">
+                            <button type="button" class="btn btn-outline-danger d-inline-flex align-items-center" onclick="confirmDelete(2);">
                                 <i class="bi bi-trash-fill"></i>&nbsp <div id="actionbuttontext">Delete</div>
                             </button>
-                            <a href='/view'><button type="button" class="btn btn-secondary d-inline-flex align-items-center">
+                            <a href='view.jsp'><button type="button" class="btn btn-outline-info d-inline-flex align-items-center">
                                 <i class="fa-solid fa-magnifying-glass-plus"></i>&nbsp <div id="actionbuttontext">Details</div>
                             </button></a>
                         </div>
                     </td>
                 </tr>
                 <tr>
+                    <td class="align-middle">3</td>
                     <td class="align-middle">Belle</td>
-                    <td class="align-middle">010-1845-3333</td>
-                    <td class="align-middle">0508-283-5981</td>
-                    <td class="align-middle">phaeton231@gmail.com</td>
-                    <td class="align-middle">Store owner</td>
+                    <td class="align-middle">
+                        <a class="link-info link-offset-2 link-opacity-75-hover link-opacity-underline-50-hover" href='view.jsp'>
+                            placeholdertext placeholdertext placeholdertext placeholdertext
+                        </a>
+                    </td>
+                    <td class="align-middle">010-7234-8591</td>
+                    <td class="align-middle">Discussion</td>
+                    <td class="align-middle">Admin</td>
                     <td class="align-middle">
                         <div class="btn-group">
-                            <a href='/edit'><button class="btn btn-primary d-inline-flex align-items-center" type="button">
+                            <a href='edit.jsp'><button class="btn btn-outline-primary d-inline-flex align-items-center" type="button">
                                 <i class="bi bi-pencil-fill"></i>&nbsp <div id="actionbuttontext">Edit</div>
                             </button></a>
-                            <button type="button" class="btn btn-danger d-inline-flex align-items-center" onclick="confirmDelete(3);">
+                            <button type="button" class="btn btn-outline-danger d-inline-flex align-items-center" onclick="confirmDelete(3);">
                                 <i class="bi bi-trash-fill"></i>&nbsp <div id="actionbuttontext">Delete</div>
                             </button>
-                            <a href='/view'><button type="button" class="btn btn-secondary d-inline-flex align-items-center">
+                            <a href='view.jsp'><button type="button" class="btn btn-outline-info d-inline-flex align-items-center">
                                 <i class="fa-solid fa-magnifying-glass-plus"></i>&nbsp <div id="actionbuttontext">Details</div>
                             </button></a>
                         </div>
                     </td>
                 </tr>
                 <tr>
+                    <td class="align-middle">4</td>
                     <td class="align-middle">Seth</td>
-                    <td class="align-middle">010-9831-2345</td>
-                    <td class="align-middle">0504-371-4555</td>
-                    <td class="align-middle">imtrying@gmail.com</td>
-                    <td class="align-middle">Investigator</td>
+                    <td class="align-middle">
+                        <a class="link-info link-offset-2 link-opacity-75-hover link-opacity-underline-50-hover" href='view.jsp'>
+                            placeholdertext placeholdertext placeholdertext placeholdertext
+                        </a>
+                    </td>
+                    <td class="align-middle">010-7234-8591</td>
+                    <td class="align-middle">Poll</td>
+                    <td class="align-middle">User</td>
                     <td class="align-middle">
                         <div class="btn-group">
-                            <a href='/edit'><button class="btn btn-primary d-inline-flex align-items-center" type="button">
+                            <a href='edit.jsp'><button class="btn btn-outline-primary d-inline-flex align-items-center" type="button">
                                 <i class="bi bi-pencil-fill"></i>&nbsp <div id="actionbuttontext">Edit</div>
                             </button></a>
-                            <button type="button" class="btn btn-danger d-inline-flex align-items-center" onclick="confirmDelete(4); return false;">
+                            <button type="button" class="btn btn-outline-danger d-inline-flex align-items-center" onclick="confirmDelete(4); return false;">
                                 <i class="bi bi-trash-fill"></i>&nbsp <div id="actionbuttontext">Delete</div>
                             </button>
-                            <a href='/view'><button type="button" class="btn btn-secondary d-inline-flex align-items-center">
+                            <a href='view.jsp'><button type="button" class="btn btn-outline-info d-inline-flex align-items-center">
                                 <i class="fa-solid fa-magnifying-glass-plus"></i>&nbsp <div id="actionbuttontext">Details</div>
                             </button></a>
                         </div>
@@ -156,16 +150,12 @@
     </div>
 
     <div class="container-fluid">
-        <a href='/add.jsp'><button type="button" class="btn btn-success d-inline-flex align-items-center">
+        <a href='add.jsp'><button type="button" class="btn btn-success d-inline-flex align-items-center">
             <i class="bi bi-plus-square-fill"></i>&nbsp <div id="actionbuttontext">Add</div>
         </button></a>
     </div>
 </div>
 
-<div class="container">
-    <footer class="navbar-fixed-bottom">
-        <p class="text-center text-body-secondary border-top pt-3 mt-3">By 22300348, Bae Hyunjae</p>
-    </footer>
-</div>
+<%@include file="./inc/footer.jsp"%>
 </body>
 </html>
